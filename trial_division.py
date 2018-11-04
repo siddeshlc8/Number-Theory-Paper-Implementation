@@ -1,9 +1,10 @@
-from math import sqrt
+
 
 def checkTrialDivision(n, primes):
+	if n in primes:
+		return True
 	for number in primes:
-		if number < n:
-			if(n % number == 0):
-				return False
+		if(n % number == 0):
+			return False
 			
 	return True

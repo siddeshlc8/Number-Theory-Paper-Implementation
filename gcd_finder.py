@@ -1,11 +1,8 @@
 # Python code to demonstrate naive 
 # method to compute gcd ( Euclidean algo ) 
-  
+import math
   
 def computeGCD(x, y): 
   
-   while(y): 
-       x, y = y, x % y 
-  
-   return x 
+   return math.gcd(x,y)
   

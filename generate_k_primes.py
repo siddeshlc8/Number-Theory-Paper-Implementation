@@ -12,9 +12,11 @@ def kPrimes(k):
 				break;
 		if m==0:
 			primes.append(number)
+			count = count + 1
 			
-		if number == int(sqrt(k)):
+		if number >= sqrt(k):
 			break
+
 		number = number + 1
 
 	return primes
